@@ -2,7 +2,7 @@ import React from 'react';
 
 const Input = (tittle) => {
     return(
-        <div classname="input">
+        <div className="input">
             <input />
             <label>{tittle}</label>
         </div>

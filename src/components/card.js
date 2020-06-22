@@ -5,7 +5,7 @@ import Input from './input';
 class card extends Component {
     render() {
         return (
-            <div classname="card">
+            <div className="card">
                 { Input('color') }
                 { Input('plual noun') }
             </div>
