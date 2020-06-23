@@ -24,7 +24,7 @@ class card extends Component {
             nounThree: "",
             celebFour: "",
             adjectiveFive: "",
-            contentVisible: true
+            contentVisible: false
         }
     
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -72,7 +72,7 @@ class card extends Component {
                 </div>
                 <button type="submit">{!this.state.contentVisible ? 'Show MadLib' : "Clear form"}</button>
                 {
-                    <Content data = {this.state}/>
+                    this.state.contentVisible ? <Content data = {this.state}/> : ""
                 }
                 
             </form>
