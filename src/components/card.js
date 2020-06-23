@@ -1,31 +1,33 @@
 import React, { Component } from 'react';
 import Input from './input';
 import Content from './content';
+import { timers } from 'jquery';
 
+const INITAL_STATE = {
+    color: "",
+    pluralNoun: "",
+    adjectiveOne: "",
+    celebOne: "",
+    adjectiveTwo: "",
+    nounOne: "",
+    numberOne: "",
+    numberTwo: "",
+    nounTwo: "",
+    adjectiveThree: "",
+    celebTwo: "",
+    celebThree: "",
+    adjectiveFour: "",
+    nounThree: "",
+    celebFour: "",
+    adjectiveFive: "",
+    contentVisible: false
+}
 
 class card extends Component {
     constructor() {
         super()
 
-        this.state = {
-            color: "",
-            pluralNoun: "",
-            adjectiveOne: "",
-            celebOne: "",
-            adjectiveTwo: "",
-            nounOne: "",
-            numberOne: "",
-            numberTwo: "",
-            nounTwo: "",
-            adjectiveThree: "",
-            celebTwo: "",
-            celebThree: "",
-            adjectiveFour: "",
-            nounThree: "",
-            celebFour: "",
-            adjectiveFive: "",
-            contentVisible: false
-        }
+        this.state = INITAL_STATE;
     
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -38,7 +40,12 @@ class card extends Component {
 
     handleFormSubmit(event) {
         event.preventDefault()
-        this.setState({ contentVisible: !this.state.contentVisible })
+        if(this.state.contentVisible) {
+            this.setState(INITAL_STATE)
+        } else {
+            this.setState({ contentVisible: true}) 
+        }
+        
     }
 
     render() {
