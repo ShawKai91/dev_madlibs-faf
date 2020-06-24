@@ -40,7 +40,7 @@ class card extends Component {
 
     handleFormSubmit(event) {
         event.preventDefault()
-        
+
         if(this.state.contentVisible) {
             this.setState(INITAL_STATE)
         } else {
@@ -75,7 +75,9 @@ class card extends Component {
             <form onSubmit={this.handleFormSubmit} className="card">
                 <div className="card_inputs">
                     {
-                        inputData.map(Data => Input( (Data), this.handleInputChange ))
+                        inputData.map((Data, index) => {
+                            return Input( (Data), this.handleInputChange, index)
+                        })
                     }
                 </div>
                 <button type="submit">{!this.state.contentVisible ? 'Show MadLib' : "Clear form"}</button>
