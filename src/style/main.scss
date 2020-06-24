@@ -39,30 +39,30 @@ body {
 
 .header {
     align-self: center;
-    // &_skew {
-    //     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%)
-    //     clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%)
+    &_skew {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+        clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
 
-    //     z-index: -10;
-    //     top: 0;
-    //     left: 0;
-    //     position: absolute;
-    //     height: 110vh;
-    //     width: 100vw;
-    //     background-color: #444444;
-    // }
-    // &_border {
-    //     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%)
-    //     clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%)
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 110vh;
+        width: 100vw;
+        background-color: #444444;
+    }
+    &_border {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+        clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%);
 
-    //     z-index: -10;
-    //     top: 0;
-    //     left: 0;
-    //     position: absolute;
-    //     height: 110vh;
-    //     width: 100vw;
-    //     background-color: #00cb79;
-    // }
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 110vh;
+        width: 100vw;
+        background-color: #00cb79;
+    }
 }
 
 .card {
