@@ -13,4 +13,10 @@ import Card from './card';
   }
 }
 
+// things we need to fix
+// placeholder
+// gray & green input labls
+// conent labls
+// btn space/card-height
+
 export default home;
