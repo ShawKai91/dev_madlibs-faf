@@ -52,7 +52,7 @@ class card extends Component {
     render() {
         const inputData = [
             {title: 'Color', state: this.state.color, name: 'color'},
-            {title: 'Plural Noun', state: this.state.pluralnoun, name: 'pluralnoun'},
+            {title: 'Plural Noun', state: this.state.pluralNoun, name: 'pluralNoun'},
             {title: 'Adjective', state: this.state.adjectiveOne, name: 'adjectiveOne'},
             {title: 'Celebrity', state: this.state.celebOne, name: 'celebOne'},
 

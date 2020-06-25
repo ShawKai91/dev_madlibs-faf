@@ -15,8 +15,8 @@ import Card from './card';
 
 // things we need to fix
 // placeholder
-// gray & green input labls
-// conent labls
+// gray & green number labls
+
 // btn space/card-height
 
 export default home;
