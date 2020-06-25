@@ -130,16 +130,17 @@ body {
 
     button {
         justify-self: center;
-        transform: translateY(50%);
     }
 
     &_Show {
         background-color: #00cb79;
+        transform: translateY(-300px);
         @include button;
     }
 
     &_Clear {
         background-color: #45b0e5;
+        transform: translateY(50%);
         @include button;
     }
 

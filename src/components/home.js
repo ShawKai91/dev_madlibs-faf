@@ -13,10 +13,4 @@ import Card from './card';
   }
 }
 
-// things we need to fix
-// placeholder
-// gray & green number labls
-
-// btn space/card-height
-
 export default home;
